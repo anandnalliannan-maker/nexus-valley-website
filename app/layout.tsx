@@ -6,6 +6,11 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Nexus Valley",
   description: "Architecting Technology for Your Business",
+  icons: {
+    icon: "/images/nexusvalleyicon.png",
+    shortcut: "/images/nexusvalleyicon.png",
+    apple: "/images/nexusvalleyicon.png",
+  },
 };
 
 const navigation = [
