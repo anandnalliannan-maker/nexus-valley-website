@@ -79,10 +79,13 @@ a {
 .logo-crop {
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.08);
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at 50% 35%, rgba(89, 214, 255, 0.12), rgba(6, 16, 28, 0.92));
 }
 
 .logo-icon {
-  transform: scale(1.14);
+  transform: scale(1.45);
   transform-origin: center;
 }
 
