@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const whatsappLink = "https://wa.me/917338841434";
+
 const services = [
   {
     title: "Web App Development",
@@ -18,9 +20,14 @@ const services = [
       "Premium websites designed to present your brand clearly, build trust, and convert business enquiries.",
   },
   {
-    title: "Excel Automation",
+    title: "SaaS Product Development",
     description:
-      "Excel and VBA solutions for reporting, reconciliation, data handling, and repetitive workflow automation.",
+      "Business-focused SaaS products designed to solve everyday operational challenges, streamline workflows, and improve efficiency across industries.",
+  },
+  {
+    title: "Reporting and Automation (RPA)",
+    description:
+      "Reporting and automation solutions for reconciliation, data handling, process efficiency, and repetitive workflow execution.",
   },
   {
     title: "Custom IT Solutions",
@@ -103,31 +110,18 @@ export default function Home() {
       </section>
 
       <section id="about" className="section-shell scroll-mt-28 py-14">
-        <div className="grid gap-6 lg:grid-cols-[0.92fr_1.08fr]">
-          <article className="panel rounded-[2rem] p-8 lg:p-10">
-            <p className="section-title text-sm text-[var(--color-accent-soft)]">About</p>
-            <h2 className="mt-4 text-3xl font-semibold text-white sm:text-4xl">
-              Technology that helps businesses operate with more clarity, speed, and control.
-            </h2>
-            <p className="mt-5 leading-8 text-[var(--color-muted)]">
-              Nexus Valley exists to make business operations more efficient through practical technology. The company focuses on enabling businesses with the right mix of digital tools, automation, and application solutions so they can work smarter, reduce friction, and scale with confidence.
-            </p>
-            <p className="mt-5 leading-8 text-[var(--color-muted)]">
-              The approach is straightforward: understand how the business works, identify where technology can create the most value, and deliver solutions that are clean, useful, and aligned to real operational needs.
-            </p>
-          </article>
-
-          <article className="panel rounded-[2rem] p-8 lg:p-10">
-            <p className="section-title text-sm text-[var(--color-accent-soft)]">Founder</p>
-            <h3 className="mt-4 text-2xl font-semibold text-white">Anand Nalliannan</h3>
-            <p className="mt-5 leading-8 text-[var(--color-muted)]">
-              Nexus Valley is founded by Anand Nalliannan, a technology professional with more than 12 years of experience across IT services, enterprise operations, automation, and application delivery.
-            </p>
-            <p className="mt-5 leading-8 text-[var(--color-muted)]">
-              His background includes roles with TCS, CTS, HCL, and Cable & Wireless Worldwide, along with exposure to global client environments such as British Airways, Wells Fargo, Vodafone, and Reed Exhibitions. Over the years, he has delivered automation initiatives, application development projects, and process improvements focused on business efficiency and execution quality.
-            </p>
-          </article>
-        </div>
+        <article className="panel rounded-[2rem] p-8 lg:p-10">
+          <p className="section-title text-sm text-[var(--color-accent-soft)]">About</p>
+          <h2 className="mt-4 max-w-4xl text-3xl font-semibold text-white sm:text-4xl">
+            Technology that helps businesses operate with more clarity, speed, and control.
+          </h2>
+          <p className="mt-5 max-w-4xl leading-8 text-[var(--color-muted)]">
+            Nexus Valley exists to make business operations more efficient through practical technology. The company focuses on enabling businesses with the right mix of digital tools, automation, reporting, and application solutions so they can work smarter, reduce friction, and scale with confidence.
+          </p>
+          <p className="mt-5 max-w-4xl leading-8 text-[var(--color-muted)]">
+            The approach is straightforward: understand how the business works, identify where technology can create the most value, and deliver solutions that are clean, useful, and aligned to real operational needs.
+          </p>
+        </article>
       </section>
 
       <section className="section-shell py-14">
@@ -170,26 +164,32 @@ export default function Home() {
             <div className="rounded-[1.8rem] border border-[#8fa8c3] bg-[rgba(255,255,255,0.3)] px-6 py-6 text-[#0d2740] shadow-[inset_0_1px_0_rgba(255,255,255,0.35)]">
               <div className="space-y-3 text-base leading-7">
                 <p>
-                  <span className="font-semibold">Email:</span> info@nexusvalley.in
+                  <span className="font-semibold">Email:</span> support@nexusvalley.in
                 </p>
                 <p>
-                  <span className="font-semibold">Location:</span> Tamil Nadu, India
+                  <span className="font-semibold">Address:</span> 9/443-3, Pari Nagar Extension
+                  <br />
+                  CAK Road
+                  <br />
+                  Karur - 639002
+                  <br />
+                  Tamil Nadu, India
                 </p>
                 <p>
-                  <span className="font-semibold">WhatsApp:</span> Update this with your active business number
+                  <span className="font-semibold">WhatsApp:</span> +91 7338841434
                 </p>
               </div>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
-                  href="https://wa.me/910000000000"
+                  href={whatsappLink}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-full bg-[#0a2033] px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition hover:bg-[#08192a]"
+                  className="inline-flex min-w-[19rem] items-center justify-center rounded-full bg-[#0a2033] px-6 py-3 text-sm font-bold uppercase tracking-[0.18em] text-white shadow-[0_10px_25px_rgba(10,32,51,0.22)] transition hover:bg-[#08192a]"
                 >
                   Chat on WhatsApp
                 </a>
                 <a
-                  href="mailto:info@nexusvalley.in"
+                  href="mailto:support@nexusvalley.in"
                   className="rounded-full border border-[#47617b] px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-[#0a2033] transition hover:bg-[rgba(10,32,51,0.08)]"
                 >
                   Email Us

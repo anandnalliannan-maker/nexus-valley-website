@@ -27,60 +27,75 @@ const socialLinks = [
   { href: "https://www.facebook.com/", label: "Facebook" },
 ];
 
-const whatsappLink = "https://wa.me/910000000000";
+const whatsappLink = "https://wa.me/917338841434";
 
 function InstagramIcon() {
   return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5 fill-none stroke-current">
-      <rect x="3.5" y="3.5" width="17" height="17" rx="4.5" strokeWidth="1.8" />
-      <circle cx="12" cy="12" r="4" strokeWidth="1.8" />
-      <circle cx="17.4" cy="6.6" r="0.9" fill="currentColor" stroke="none" />
+    <svg viewBox="0 0 32 32" aria-hidden="true" className="h-6 w-6">
+      <defs>
+        <linearGradient id="instagram-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+          <stop offset="0%" stopColor="#feda75" />
+          <stop offset="35%" stopColor="#fa7e1e" />
+          <stop offset="65%" stopColor="#d62976" />
+          <stop offset="100%" stopColor="#4f5bd5" />
+        </linearGradient>
+      </defs>
+      <rect width="32" height="32" rx="8" fill="url(#instagram-gradient)" />
+      <rect x="7" y="7" width="18" height="18" rx="5.5" fill="none" stroke="#fff" strokeWidth="2.5" />
+      <circle cx="16" cy="16" r="4.6" fill="none" stroke="#fff" strokeWidth="2.5" />
+      <circle cx="22.6" cy="9.4" r="1.7" fill="#fff" />
     </svg>
   );
 }
 
 function LinkedInIcon() {
   return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5 fill-current">
-      <path d="M6.8 8.9H3.6V20h3.2V8.9Zm.2-3.4A1.9 1.9 0 1 0 5 7.4a1.9 1.9 0 0 0 2-1.9ZM20.4 13.1c0-3.3-1.8-4.8-4.2-4.8-1.9 0-2.8 1.1-3.2 1.8V8.9h-3.1V20H13v-6c0-1.6.3-3.1 2.2-3.1s1.9 1.8 1.9 3.2V20h3.2v-6.9Z" />
+    <svg viewBox="0 0 32 32" aria-hidden="true" className="h-6 w-6">
+      <rect width="32" height="32" rx="6" fill="#0a66c2" />
+      <circle cx="10.2" cy="10.2" r="2.2" fill="#fff" />
+      <rect x="8.1" y="13.1" width="4.2" height="10.8" fill="#fff" />
+      <path
+        fill="#fff"
+        d="M15.6 13.1h4v1.5c.6-.9 1.8-1.9 3.7-1.9 3.9 0 4.7 2.6 4.7 6v5.2h-4.2v-4.7c0-1.1 0-2.6-1.6-2.6s-1.9 1.2-1.9 2.5v4.8h-4.2V13.1Z"
+      />
     </svg>
   );
 }
 
 function XIcon() {
   return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5 fill-current">
-      <path d="M18.9 3H21l-4.6 5.2L22 21h-4.4l-3.5-4.8L9.8 21H7.7l4.9-5.6L2 3h4.5L9.7 7.5 13.6 3h2.1Zm-1.5 16h1.2L5.8 4.9H4.5L17.4 19Z" />
+    <svg viewBox="0 0 32 32" aria-hidden="true" className="h-6 w-6">
+      <rect width="32" height="32" rx="6" fill="#000" />
+      <path
+        fill="#fff"
+        d="M20.9 6.7H24l-6.8 7.8 8 10.8h-6.3l-4.9-6.5-5.6 6.5H5.3l7.3-8.4-7.7-10.2h6.4l4.4 5.9 5.2-5.9Zm-1.1 16.8h1.7L10.3 8.4H8.5l11.3 15.1Z"
+      />
     </svg>
   );
 }
 
 function FacebookIcon() {
   return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5 fill-current">
-      <path d="M13.3 21v-8h2.7l.4-3.2h-3.1V7.7c0-.9.3-1.5 1.6-1.5h1.7V3.4c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.4v2.1H7V13h3v8h3.3Z" />
+    <svg viewBox="0 0 32 32" aria-hidden="true" className="h-6 w-6">
+      <circle cx="16" cy="16" r="16" fill="#1877f2" />
+      <path
+        fill="#fff"
+        d="M18.1 26v-8.1h2.7l.4-3.1h-3.1v-2c0-.9.2-1.6 1.6-1.6h1.7V8.3c-.8-.1-1.7-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.3H13v3.1h2.7V26h2.4Z"
+      />
     </svg>
   );
 }
 
 function WhatsAppIcon() {
   return (
-    <svg viewBox="0 0 32 32" aria-hidden="true" className="h-5 w-5">
+    <svg viewBox="0 0 32 32" aria-hidden="true" className="h-6 w-6">
       <path
         fill="#25D366"
-        d="M19.1 17.5c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1l-.6.9c-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.3-.8-.7-1.4-1.6-1.6-1.8-.2-.3 0-.4.1-.6l.4-.4c.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.8-1-2.4-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.7.3-.2.2-1 1-1 2.5s1.1 3 1.2 3.2c.1.2 2.1 3.3 5.2 4.6.7.3 1.3.5 1.8.6.8.3 1.6.2 2.2.1.7-.1 2.1-.9 2.4-1.8.3-.9.3-1.7.2-1.8-.1-.1-.3-.2-.6-.3Z"
-      />
-      <path
-        fill="#25D366"
-        d="M16 3.2C9.2 3.2 3.7 8.7 3.7 15.5c0 2.2.6 4.3 1.7 6.2l-1.8 6.6 6.8-1.8c1.8 1 3.8 1.5 5.8 1.5 6.8 0 12.3-5.5 12.3-12.3S22.8 3.2 16 3.2Zm0 22.6c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4 1.1 1.1-3.9-.3-.4c-1-1.6-1.6-3.4-1.6-5.3 0-5.8 4.8-10.6 10.6-10.6s10.6 4.8 10.6 10.6S21.8 25.8 16 25.8Z"
+        d="M16 2.8c-7.3 0-13.2 5.8-13.2 13 0 2.3.6 4.5 1.7 6.4l-1.9 7 7.2-1.9c1.8 1 3.9 1.5 6.1 1.5 7.2 0 13-5.8 13-13S23.2 2.8 16 2.8Z"
       />
       <path
         fill="#fff"
-        d="M24.6 15.5c0-4.7-3.8-8.6-8.6-8.6s-8.6 3.8-8.6 8.6c0 1.7.5 3.4 1.5 4.8l-.9 3.2 3.3-.9c1.4.9 3 1.4 4.7 1.4 4.7 0 8.6-3.8 8.6-8.5Zm-8.5 7.1c-1.5 0-3-.4-4.2-1.2l-.3-.2-2.4.7.7-2.3-.2-.3c-.8-1.3-1.3-2.8-1.3-4.3 0-4.2 3.4-7.6 7.7-7.6s7.7 3.4 7.7 7.6-3.5 7.6-7.7 7.6Z"
-      />
-      <path
-        fill="#fff"
-        d="M19.1 17.5c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1l-.6.9c-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.3-.8-.7-1.4-1.6-1.6-1.8-.2-.3 0-.4.1-.6l.4-.4c.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.8-1-2.4-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.7.3-.2.2-1 1-1 2.5s1.1 3 1.2 3.2c.1.2 2.1 3.3 5.2 4.6.7.3 1.3.5 1.8.6.8.3 1.6.2 2.2.1.7-.1 2.1-.9 2.4-1.8.3-.9.3-1.7.2-1.8-.1-.1-.3-.2-.6-.3Z"
+        d="M15.9 7.4c-4.6 0-8.3 3.7-8.3 8.3 0 1.5.4 3 1.2 4.3l-1 3.3 3.4-.9c1.3.8 2.8 1.2 4.3 1.2 4.6 0 8.3-3.7 8.3-8.3S20.5 7.4 15.9 7.4Zm4.8 11.1c-.2.5-1.2 1-1.7 1.1-.5.1-1 .2-1.7-.1-.4-.1-.9-.3-1.6-.6-2.7-1.2-4.5-4-4.6-4.1-.1-.2-1.1-1.5-1.1-2.9 0-1.4.7-2 1-2.3.3-.3.6-.3.8-.3h.5c.2 0 .4 0 .6.4.2.5.7 1.7.8 1.8.1.2.1.3 0 .5-.1.2-.2.4-.4.6l-.5.5c-.2.2-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.2 1 2.1 1.3 2.4 1.4.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.7-.1.2.1 1.5.7 1.8.8.3.2.4.2.5.3.1.1.1.6-.1 1.1Z"
       />
     </svg>
   );
@@ -151,7 +166,7 @@ export default function RootLayout({
                   target="_blank"
                   rel="noreferrer"
                   aria-label="WhatsApp"
-                  className="flex h-11 w-11 items-center justify-center rounded-full border border-[var(--color-line)] bg-white/6 text-[var(--color-accent-soft)] transition hover:border-[var(--color-accent)] hover:text-white"
+                  className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/8 transition hover:border-[var(--color-accent)] hover:scale-[1.04]"
                 >
                   <WhatsAppIcon />
                 </a>
@@ -208,7 +223,7 @@ export default function RootLayout({
                       target="_blank"
                       rel="noreferrer"
                       aria-label={item.label}
-                      className="flex h-11 w-11 items-center justify-center rounded-full border border-[var(--color-line)] transition hover:border-[var(--color-accent)] hover:text-white"
+                      className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/4 transition hover:border-[var(--color-accent)] hover:bg-white/10"
                     >
                       <SocialIcon label={item.label} />
                     </a>
@@ -218,7 +233,7 @@ export default function RootLayout({
                     target="_blank"
                     rel="noreferrer"
                     aria-label="WhatsApp"
-                    className="flex h-11 w-11 items-center justify-center rounded-full border border-[var(--color-line)] transition hover:border-[var(--color-accent)] hover:text-white"
+                    className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/4 transition hover:border-[var(--color-accent)] hover:bg-white/10"
                   >
                     <WhatsAppIcon />
                   </a>
