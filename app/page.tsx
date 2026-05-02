@@ -149,20 +149,20 @@ export default function Home() {
       </section>
 
       <section id="contact" className="section-shell scroll-mt-28 py-14">
-        <div className="hero-metal rounded-[2rem] px-8 py-10 lg:px-12 lg:py-12">
-          <div className="grid gap-8 lg:grid-cols-[1fr_0.95fr] lg:items-center">
+        <div className="hero-metal overflow-hidden rounded-[2rem] px-5 py-8 sm:px-7 sm:py-9 lg:px-12 lg:py-12">
+          <div className="grid gap-6 lg:grid-cols-[1fr_0.95fr] lg:items-center lg:gap-8">
             <div>
               <p className="section-title text-sm text-[#0b314d]">Contact</p>
-              <h2 className="mt-4 font-[family:var(--font-orbitron)] text-3xl font-semibold tracking-[0.08em] sm:text-4xl">
+              <h2 className="mt-4 max-w-3xl font-[family:var(--font-orbitron)] text-3xl leading-[1.18] font-semibold tracking-[0.06em] sm:text-4xl sm:leading-[1.16]">
                 Let&apos;s discuss your next web, mobile, or automation project.
               </h2>
-              <p className="mt-4 max-w-2xl text-lg leading-8 text-[#163754]">
+              <p className="mt-4 max-w-2xl text-base leading-8 text-[#163754] sm:text-lg">
                 Reach out to Nexus Valley for premium digital solutions aligned with your business goals.
               </p>
             </div>
 
-            <div className="rounded-[1.8rem] border border-[#8fa8c3] bg-[rgba(255,255,255,0.3)] px-6 py-6 text-[#0d2740] shadow-[inset_0_1px_0_rgba(255,255,255,0.35)]">
-              <div className="space-y-3 text-base leading-7">
+            <div className="w-full max-w-full rounded-[1.8rem] border border-[#8fa8c3] bg-[rgba(255,255,255,0.3)] px-5 py-5 text-[#0d2740] shadow-[inset_0_1px_0_rgba(255,255,255,0.35)] sm:px-6 sm:py-6">
+              <div className="space-y-3 text-base leading-7 break-words">
                 <p>
                   <span className="font-semibold">Email:</span> support@nexusvalley.in
                 </p>
@@ -179,18 +179,18 @@ export default function Home() {
                   <span className="font-semibold">WhatsApp:</span> +91 7338841434
                 </p>
               </div>
-              <div className="mt-6 flex flex-wrap gap-3">
+              <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <a
                   href={whatsappLink}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex min-w-[19rem] items-center justify-center rounded-full bg-[#0a2033] px-6 py-3 text-sm font-bold uppercase tracking-[0.18em] text-white shadow-[0_10px_25px_rgba(10,32,51,0.22)] transition hover:bg-[#08192a]"
+                  className="inline-flex w-full items-center justify-center rounded-full border border-[#0a2033] bg-[#0a2033] px-6 py-3 text-center text-sm font-extrabold uppercase tracking-[0.14em] !text-white shadow-[0_10px_25px_rgba(10,32,51,0.22)] [text-shadow:0_1px_2px_rgba(0,0,0,0.35)] transition hover:bg-[#08192a] sm:w-auto sm:min-w-[17rem]"
                 >
                   Chat on WhatsApp
                 </a>
                 <a
                   href="mailto:support@nexusvalley.in"
-                  className="rounded-full border border-[#47617b] px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-[#0a2033] transition hover:bg-[rgba(10,32,51,0.08)]"
+                  className="inline-flex w-full items-center justify-center rounded-full border border-[#47617b] px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.18em] text-[#0a2033] transition hover:bg-[rgba(10,32,51,0.08)] sm:w-auto"
                 >
                   Email Us
                 </a>
